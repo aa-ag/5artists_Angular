@@ -1,0 +1,20 @@
+.logo {
+    padding: 2.5px 10px 2.5px 10px;
+    margin: 0px 4px 0px 4px;
+    border: 0.5px solid rgba($color: #ffffffa4, $alpha: 1.0);
+    border-radius: 6px;
+    background-color: rgba($color: #ffae00c2, $alpha: 1.0);
+    color: #fff;
+}
+
+.logo:hover {
+    background-color: rgba($color: #df9a06, $alpha: 1.0);
+    margin: 4px 4px 4px 4px;
+    cursor: pointer;
+}
+
+a {
+    background-color: rgba($color: #ff8800ee, $alpha: 1.0);
+    color: #fff;
+    margin-left: 2px;
+}
