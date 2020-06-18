@@ -13,6 +13,7 @@
             <a mat-list-item routerLink="/sinatra" (click)="drawer.close()">Sinatra</a>
             <a id="addartist" mat-list-item routerLink="/addartist" (click)="drawer.close();">Add New Artist</a>
         </mat-nav-list>
+      
     </mat-sidenav>
 
     <mat-sidenav-content>
@@ -24,11 +25,17 @@
             <mat-icon aria-label="Side nav toggle icon">🎶</mat-icon>
             </button>
 
+            <span class="fill-space"></span>
+
+            <div *ngIf="!(isHandset$ | async)">
+                <a mat-button routerLink="/artists">Fav Artists</a>
+
             <span class="logo" routerLink="/artists">Home</span>
 
             <span class="fill-space"></span>
 
             <div *ngIf="!(isHandset$ | async)">
+
                 <a mat-button routerLink="/richter">Richter</a>
                 <a mat-button routerLink="/mtukudzi">Mtukudzi</a>
                 <a mat-button routerLink="/aviici">Aviici</a>
