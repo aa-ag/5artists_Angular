@@ -4,7 +4,7 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side' "
     [opened] = "false"
     >
-    <mat-toolbar>
+    <mat-toolbar>🎶</mat-toolbar>
         <mat-nav-list>
             <a mat-list-item routerLink="/richter" (click)="drawer.close()">Richter</a>
             <a mat-list-item routerLink="/mtukudzi" (click)="drawer.close()">Mtukudzi</a>
@@ -12,7 +12,7 @@
             <a mat-list-item routerLink="/marley" (click)="drawer.close()">Marley</a>
             <a mat-list-item routerLink="/sinatra" (click)="drawer.close()">Sinatra</a>
         </mat-nav-list>
-    </mat-toolbar>
+      
     </mat-sidenav>
 
     <mat-sidenav-content>
@@ -28,6 +28,13 @@
 
             <div *ngIf="!(isHandset$ | async)">
                 <a mat-button routerLink="/artists">Fav Artists</a>
+
+            <span class="logo" routerLink="/artists">Home</span>
+
+            <span class="fill-space"></span>
+
+            <div *ngIf="!(isHandset$ | async)">
+
                 <a mat-button routerLink="/richter">Richter</a>
                 <a mat-button routerLink="/mtukudzi">Mtukudzi</a>
                 <a mat-button routerLink="/aviici">Aviici</a>
