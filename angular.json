@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "artists"
+    }
+  },
+  "defaultProject": "artists",
+  "cli": {
+    "analytics": "5fc184f3-656b-44ca-9f89-4406e1ce260f"
+  }
 }
