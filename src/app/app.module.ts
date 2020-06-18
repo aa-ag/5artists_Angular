@@ -11,6 +11,8 @@ import { SinatraComponent } from './sinatra/sinatra.component';
 import { MarleyComponent } from './marley/marley.component';
 import { MtukudziComponent } from './mtukudzi/mtukudzi.component';
 import { AviiciComponent } from './aviici/aviici.component';
+import { AddArtistComponent } from './add-artist/add-artist.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,15 @@ import { AviiciComponent } from './aviici/aviici.component';
     SinatraComponent,
     MarleyComponent,
     MtukudziComponent,
-    AviiciComponent
+    AviiciComponent,
+    AddArtistComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

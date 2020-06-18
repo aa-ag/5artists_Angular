@@ -1,0 +1,20 @@
+<div class="container">
+    <h2>Add a new Artist to the list!</h2>
+
+    <form [formGroup]="addArtistForm" (ngSubmit)="getArtistData()" >
+        <mat-form-field>
+            <mat-label>Artist's Full Name</mat-label>
+            <input type="text" matInput placeholder="What's the artist called?" formControlName="artistName">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Nationality</mat-label>
+            <input type="text" matInput placeholder="Where's the artist from?" formControlName="nationality">
+        </mat-form-field>
+        <br>
+
+        <button type="submit" mat-raised-button>Submit</button>
+        <br>
+
+    </form>
+</div>

@@ -7,6 +7,7 @@ import { MtukudziComponent } from './mtukudzi/mtukudzi.component';
 import { AviiciComponent } from './aviici/aviici.component';
 import { MarleyComponent } from './marley/marley.component';
 import { SinatraComponent } from './sinatra/sinatra.component';
+import { AddArtistComponent } from './add-artist/add-artist.component';
 
 
 const routes: Routes = [
@@ -30,6 +31,9 @@ const routes: Routes = [
   },
   {
     path: 'sinatra', component: SinatraComponent
+  },
+  {
+    path: 'addartist', component: AddArtistComponent
   }
 ];
 
